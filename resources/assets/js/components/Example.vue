@@ -5,8 +5,9 @@
 <script>
     export default {
         mounted() {
+            var jquery = require('jquery')
             require('summernote')
-            $(this.$el).summernote()
+            jquery(this.$el).summernote()
         }
     }
 </script>
