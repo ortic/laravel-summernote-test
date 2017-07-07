@@ -3,10 +3,14 @@
 </template>
 
 <script>
+    require('summernote/dist/summernote.css')
+
     export default {
-        mounted() {            
+        mounted() {
+            var jQuery = require('jquery')
+            require('bootstrap/js/tooltip')
             require('summernote')
-            $(this.$el).summernote()
+            jQuery(this.$el).summernote()
         }
     }
 </script>
